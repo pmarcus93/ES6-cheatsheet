@@ -92,3 +92,22 @@ to using the deprecated arguments array. */
   logMyArguments('Milkshake', 'Burger', 'Fries', 'Coke');//Milkshake,Burger,Fries,Coke
 
 }
+
+
+/***** FUNCTIONS *****/
+
+//Default Parameter Values
+/* Note that function default values can be any valid expression. */
+
+{
+
+  function defaultParamValues(x = 45, y = 12) {
+    console.log(x+y);
+  }
+
+  defaultParams(); //57
+  defaultParams(2); //14
+  defaultParams(undefined, undefined); //57
+  defaultParams(0,3); //3
+
+}
