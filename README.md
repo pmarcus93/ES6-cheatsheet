@@ -2,9 +2,7 @@
 
 Based on You Don't Know Javascript - ES6 & Beyond
 
-
 by Kyle Simpson (@getify)
-
 
 https://github.com/getify/You-Dont-Know-JS
 
