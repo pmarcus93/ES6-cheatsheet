@@ -111,3 +111,71 @@ to using the deprecated arguments array. */
   defaultParams(0,3); //3
 
 }
+
+/***** CONSTRUCTORS *****/
+//Objects
+
+//Concise Properties
+/*Both declarations above are equivalents.*/
+
+//pre-ES6
+
+var x = 2, y = 3,
+  o = {
+    x : x,
+    y : y
+  }
+
+//ES6
+
+var x = 2, y = 3,
+  o = {
+    x,
+    y
+  }
+
+//Concise Methods
+
+//pre-ES6
+
+var o = {
+  x: function() {
+    //...
+  },
+  y: function(){
+    //...
+  }
+}
+
+//ES6
+
+var o = {
+  x() {
+    //...
+  },
+  y(){
+    //...
+  }
+}
+
+
+/***** FUNCTIONS *****/
+// Arrow Functions
+
+/* Looks like this: */
+// pre-ES6
+
+function sum(x,y) {
+  return x+y;
+}
+
+// ES6 Arrow Function
+
+var sum (x,y) => {
+  return x+y;
+}
+
+/* If there's only one expression and you ommit the surrounding {}, there's an
+inplied return in front of the expression. */
+
+var sum = (x,y) => x+y;
